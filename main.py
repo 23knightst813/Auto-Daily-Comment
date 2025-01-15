@@ -57,7 +57,7 @@ WebDriverWait(driver, 10).until(
 comment_box = driver.find_element(By.XPATH, comment_xpath)
 
 # Type the comment
-comment_box.send_keys("")
+comment_box.send_keys(str(comment))
 
 # Submit the comment
 comment_box.send_keys("\n")
